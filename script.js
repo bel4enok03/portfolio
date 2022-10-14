@@ -4,7 +4,14 @@ window.addEventListener('scroll',function(){
 });
 
 let menuToggle = document.querySelector('.toggle');
+let menu = document.querySelector('.menu');
+
 menuToggle.onclick = () =>{
     menuToggle.classList.toggle('active');
+    menu.classList.toggle('active');
 }
 
+window.onscroll = () =>{
+    menu.classList.remove('active');
+    menuToggle.classList.remove('active');
+}
