@@ -15,3 +15,4 @@ window.onscroll = () => {
 	menu.classList.remove('active');
 	menuToggle.classList.remove('active');
 };
+

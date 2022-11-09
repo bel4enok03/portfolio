@@ -293,6 +293,7 @@ img {
 	margin: 20px;
 	text-align: center;
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .services .content .servicesText:hover {
@@ -310,6 +311,121 @@ img {
 	font-size: 20px;
 	font-weight: 500;
 }
+
+.contact {
+	background-color: #111;
+}
+
+.contact .content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.contact .contactInfo {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.contact .contactInfo .box {
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.contact .contactInfo .box .icon {
+	min-width: 60px;
+	height: 60px;
+	background: #03e9f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.contact .contactInfo .box .text {
+	color: #fff;
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+.contact .contactInfo .box .text h3 {
+	color: #03e9f4;
+}
+
+.contact .contactForm {
+	width: 40%;
+	padding: 40px;
+}
+
+.contact .contactForm h2 {
+	color: #fff;
+	font-size: 24px;
+}
+
+.contact .contactForm .inputBox {
+	width: 100%;
+	margin-top: 10px;
+	position: relative;
+}
+
+.contact .contactForm .inputBox input,
+.contact .contactForm .inputBox textarea {
+	width: 100%;
+	padding: 5px 0;
+	margin: 10px 0;
+	font-size: 16px;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	border-bottom: 1px solid #03e9f4;
+	outline: none;
+	color: #fff;
+	resize: none;
+
+}
+
+.contact .contactForm .inputBox span {
+	color: #fff;
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	margin: 10px 0;
+	font-size: 16px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.contact .contactForm .inputBox input:focus ~ span,
+.contact .contactForm .inputBox input:valid ~ span,
+.contact .contactForm .inputBox textarea:valid ~ span,
+.contact .contactForm .inputBox textarea:focus ~ span {
+	color: #03e9f4;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.contact .contactForm .inputBox input[type="submit"]{
+	width: 100%;
+	background: #111;
+	color: #03e9f4;
+	cursor: pointer;
+	border: none;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.contact .contactForm .inputBox input[type="submit"]:hover{
+	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	background: #03e9f4;
+	color: #050801;
+}
+
 
 /*Media*/
 
@@ -382,7 +498,8 @@ img {
 		font-size: 16px;
 	}
 	.heading h2 {
-		font-size: 24px;
+		font-size: 30px;
+		font-weight: 700;
 	}
 	.content {
 		flex-direction: column;
