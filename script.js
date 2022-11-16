@@ -53,24 +53,25 @@ let menuItemActiv = false;
 
 //let elem = document.querySelector('.www');
 
-// toogleBtn.forEach((btn, i) => {
-// 	btn.addEventListener('click', () => {
-// 		switch (menuItemActiv) {
-// 			case false:
-// 				menuItem[i * 2 + 0].classList.add('up');
-// 				menuItem[i * 2 + 1].classList.add('down');
-// 				btn.classList.add('activLink');
-// 				break;
-// 			case true:
-// 				menuItem[i * 2 + 0].classList.remove('up');
-// 				menuItem[i * 2 + 1].classList.remove('down');
-// 				btn.classList.remove('activLink');
-// 				break;
-// 		}
+toogleBtn.forEach((btn, i) => {
+	btn.addEventListener('click', () => {
+		
+		switch (menuItemActiv) {
+			case false:
+				menuItem[i * 2 + 0].classList.toggle('up');
+				menuItem[i * 2 + 1].classList.toggle('down');
+				btn.classList.add('activLink');
+				break;
+			case true:
+				menuItem[i * 2 + 0].classList.remove('up');
+				menuItem[i * 2 + 1].classList.remove('down');
+				btn.classList.remove('activLink');
+				break;
+		}
 
-// 		menuItemActiv = !menuItemActiv;
-// 	});
-// });
+		menuItemActiv = !menuItemActiv;
+	});
+});
 
 // function buttonClick() {
 // 	toogleBtn.forEach((btn, i) => {
@@ -99,25 +100,25 @@ let menuItemActiv = false;
 // 	});
 // }
 
-function buttonClick() {
-	toogleBtn.forEach((btn, i) => {
-		menuItem[i * 2 + 0].classList.remove('up');
-		menuItem[i * 2 + 1].classList.remove('down');
-		btn.classList.remove('activLink');
-	});
-}
+// function buttonClick() {
+// 	toogleBtn.forEach((btn, i) => {
+// 		menuItem[i * 2 + 0].classList.remove('up');
+// 		menuItem[i * 2 + 1].classList.remove('down');
+// 		btn.classList.remove('activLink');
+// 	});
+// }
 
-toogleBtn.forEach((btn, i) => {
-	btn.addEventListener('click', () => {
-		// menuItem[i * 2 + 0].classList.add('dnone');
-		// menuItem[i * 2 + 1].classList.add('dnone');
-		// btn.classList.add('dnone');
+// toogleBtn.forEach((btn, i) => {
+// 	btn.addEventListener('click', () => {
+// 		// menuItem[i * 2 + 0].classList.add('dnone');
+// 		// menuItem[i * 2 + 1].classList.add('dnone');
+// 		// btn.classList.add('dnone');
 
-		menuItem[i * 2 + 0].classList.remove('up');
-		menuItem[i * 2 + 1].classList.remove('down');
-		btn.classList.remove('activLink');
-	});
-});
+// 		menuItem[i * 2 + 0].classList.remove('up');
+// 		menuItem[i * 2 + 1].classList.remove('down');
+// 		btn.classList.remove('activLink');
+// 	});
+// });
 
 function MouseOver(elem) {
 	// toogleBtn[0].classList.add('activLink');
