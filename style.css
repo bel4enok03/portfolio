@@ -19,6 +19,35 @@ html::-webkit-scrollbar-thumb {
 	border-radius: 80px;
 }
 
+section {
+	padding: 100px;
+}
+
+.heading {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #111;
+}
+
+.heading.white {
+	color: #fff;
+}
+
+.heading h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+/* header start */
+
 header {
 	position: fixed;
 	top: 0;
@@ -89,10 +118,9 @@ header ul li a:before {
 header ul li a:hover::before {
 	width: 100%;
 }
+/* header end */
 
-section {
-	padding: 100px;
-}
+/* main page start */
 
 .banner {
 	position: relative;
@@ -231,26 +259,13 @@ section {
 	}
 }
 
-.heading {
-	width: 100%;
-	text-align: center;
-	margin-bottom: 30px;
-	color: #111;
-}
+/* main page end */
 
-.heading h2 {
-	font-size: 30px;
-	font-weight: 700;
-}
-
-.content {
-	display: flex;
-	justify-content: space-between;
-}
-
+/* about start */
 .contentText {
 	padding-right: 30px;
 }
+
 .contentText h3 {
 	font-size: 24px;
 	margin-bottom: 10px;
@@ -270,12 +285,10 @@ img {
 	filter: grayscale(80%);
 }
 
+/* about end */
+/* services start */
 .services {
 	background-color: #111;
-}
-
-.heading.white {
-	color: #fff;
 }
 
 .services .content {
@@ -311,6 +324,9 @@ img {
 	font-size: 20px;
 	font-weight: 500;
 }
+/* services end */
+
+/* work start */
 
 .toogleMenuLink .toogleBtn,
 .toogleMenuLink a {
@@ -347,17 +363,13 @@ img {
 	box-shadow: 0px 0px 24px 14px rgba(255, 255, 255, 0.83);
 }
 
-.up {
+.webSiteLink {
 	transform: translate(50px, -90px);
 }
 
-.down {
+.gitHubLink {
 	transform: translate(100px, 0);
 }
-
-/* .dnone {
-	display: none !important;
-} */
 
 .activLink {
 	transform: rotate(43deg);
@@ -412,6 +424,10 @@ img {
 	font-size: 30px;
 }
 
+/* work end */
+
+
+/* contact start */
 .contact {
 	background-color: #111;
 }
@@ -427,6 +443,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
+	padding: 40px;
 }
 
 .contact .contactInfo .box {
@@ -457,7 +474,7 @@ img {
 }
 
 .contact .contactForm {
-	width: 40%;
+	width: 50%;
 	padding: 40px;
 }
 
@@ -524,6 +541,8 @@ img {
 	background: #03e9f4;
 	color: #050801;
 }
+
+/* contact end */
 
 /*Media*/
 
@@ -667,7 +686,7 @@ img {
 		color: #fff;
 		margin-left: 12px;
 		font-size: 14px;
-
+	}
 }
 
 @media (max-width: 600px) {
@@ -681,11 +700,24 @@ img {
 	}
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
+	section {
+		padding: 40px;
+	}
 	.banner {
 		background: #050801;
 	}
-
+	.services .content .servicesText {
+		width: 100px;
+	}
+	.services .content .servicesText img {
+		width: 30px;
+		height: 30px;
+		filter: invert(1);
+	}
+	.services .content .servicesText h2 {
+		font-size: 14px;
+	}
 	.toogleMenuLink .toogleBtn {
 		background-color: #111;
 		height: 30px;
@@ -713,33 +745,32 @@ img {
 	.up {
 		transform: translate(20px, -20px);
 	}
-
 	.down {
 		transform: translate(30px, 10px);
 	}
-
 	.work .content .workBox:hover .workOverlay h2 {
 		font-size: 12px;
 	}
-
 	.contact .content {
 		display: flex;
 		flex-direction: column;
 	}
-
 	.contact .contactInfo {
 		width: 100%;
+		padding: 10px;
 	}
-
 	.contact .contactForm {
 		width: 100%;
+		padding: 10px;
 	}
-
 	.contact .contactInfo .box .text {
 		color: #fff;
 		margin-left: 12px;
 		font-size: 14px;
-
-}
-
+	}
+	.contact .contactInfo .box .icon {
+		min-width: 35px;
+    	height: 35px;
+	}
 	
+}
