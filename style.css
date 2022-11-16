@@ -312,6 +312,106 @@ img {
 	font-weight: 500;
 }
 
+.toogleMenuLink .toogleBtn,
+.toogleMenuLink a {
+	position: absolute;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+}
+
+.toogleMenuLink a {
+	background-color: black;
+	text-decoration: none;
+	height: 50px;
+	width: 50px;
+	color: #222;
+	left: 10%;
+	transition: 0.5s;
+}
+
+.toogleMenuLink .toogleBtn {
+	background-color: #111;
+	height: 80px;
+	width: 80px;
+	font-size: 22px;
+	border: none;
+	left: 8%;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.toogleMenuLink .toogleBtn:hover,
+.work .content .workBox .workOverlay .toogleMenuLink a:hover {
+	box-shadow: 0px 0px 24px 14px rgba(255, 255, 255, 0.83);
+}
+
+.up {
+	transform: translate(50px, -90px);
+}
+
+.down {
+	transform: translate(100px, 0);
+}
+
+/* .dnone {
+	display: none !important;
+} */
+
+.activLink {
+	transform: rotate(43deg);
+}
+
+.work .content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.work .content .workBox {
+	width: 50%;
+	padding: 40px 20px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.work .content .workBox .workOverlay {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+.work .content .workBox:hover .workOverlay {
+	top: 0;
+	transition: 1s all ease;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), #03e9f4);
+}
+
+.work .content .workBox:hover .workOverlay h2 {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.work .content .workBox .workOverlay a {
+	text-decoration: none;
+}
+
+.work .content .workBox .workOverlay .fa {
+	color: white;
+	font-size: 30px;
+}
+
 .contact {
 	background-color: #111;
 }
@@ -385,7 +485,6 @@ img {
 	outline: none;
 	color: #fff;
 	resize: none;
-
 }
 
 .contact .contactForm .inputBox span {
@@ -408,7 +507,7 @@ img {
 	transform: translateY(-20px);
 }
 
-.contact .contactForm .inputBox input[type="submit"]{
+.contact .contactForm .inputBox input[type='submit'] {
 	width: 100%;
 	background: #111;
 	color: #03e9f4;
@@ -420,12 +519,11 @@ img {
 	transition: 0.2s;
 }
 
-.contact .contactForm .inputBox input[type="submit"]:hover{
+.contact .contactForm .inputBox input[type='submit']:hover {
 	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
 	background: #03e9f4;
 	color: #050801;
 }
-
 
 /*Media*/
 
@@ -516,4 +614,132 @@ img {
 	.services .content .servicesText {
 		margin: 6px;
 	}
+	.toogleMenuLink .toogleBtn {
+		background-color: #111;
+		height: 45px;
+		width: 45px;
+		font-size: 20px;
+		border: none;
+		left: 8%;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.toogleMenuLink a {
+		background-color: black;
+		text-decoration: none;
+		height: 35px;
+		width: 35px;
+		color: #222;
+		left: 10%;
+		transition: 0.5s;
+	}
+	.work .content .workBox .workOverlay .fa {
+		color: white;
+		font-size: 20px;
+	}
+	.up {
+		transform: translate(20px, -50px);
+	}
+	
+	.down {
+		transform: translate(50px, 0);
+	}
+
+	.work .content .workBox:hover .workOverlay h2 {
+		font-size: 20px;
+	}
+	
+	.contact .content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact .contactInfo {
+		width: 100%;
+	}
+
+	.contact .contactForm {
+		width: 100%;
+	}
+
+	.contact .contactInfo .box .text {
+		color: #fff;
+		margin-left: 12px;
+		font-size: 14px;
+
 }
+
+@media (max-width: 600px) {
+	.work .content .workBox {
+		width: 80%;
+		padding: 40px 20px;
+		position: relative;
+		overflow: hidden;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 450px){
+	.banner {
+		background: #050801;
+	}
+
+	.toogleMenuLink .toogleBtn {
+		background-color: #111;
+		height: 30px;
+		width: 30px;
+		font-size: 15px;
+		border: none;
+		left: 8%;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.toogleMenuLink a {
+		background-color: black;
+		text-decoration: none;
+		height: 20px;
+		width: 20px;
+		color: #222;
+		left: 10%;
+		transition: 0.5s;
+	}
+	.work .content .workBox .workOverlay .fa {
+		color: white;
+		font-size: 15px;
+	}
+	.up {
+		transform: translate(20px, -20px);
+	}
+
+	.down {
+		transform: translate(30px, 10px);
+	}
+
+	.work .content .workBox:hover .workOverlay h2 {
+		font-size: 12px;
+	}
+
+	.contact .content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact .contactInfo {
+		width: 100%;
+	}
+
+	.contact .contactForm {
+		width: 100%;
+	}
+
+	.contact .contactInfo .box .text {
+		color: #fff;
+		margin-left: 12px;
+		font-size: 14px;
+
+}
+
+	
