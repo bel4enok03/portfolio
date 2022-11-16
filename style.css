@@ -44,8 +44,6 @@ section {
 	justify-content: space-between;
 }
 
-
-
 /* header start */
 
 header {
@@ -401,7 +399,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border-radius: 5px;	
+	border-radius: 5px;
 }
 
 .work .content .workBox:hover .workOverlay {
@@ -425,7 +423,6 @@ img {
 }
 
 /* work end */
-
 
 /* contact start */
 .contact {
@@ -660,7 +657,7 @@ img {
 	.up {
 		transform: translate(20px, -50px);
 	}
-	
+
 	.down {
 		transform: translate(50px, 0);
 	}
@@ -668,7 +665,7 @@ img {
 	.work .content .workBox:hover .workOverlay h2 {
 		font-size: 20px;
 	}
-	
+
 	.contact .content {
 		display: flex;
 		flex-direction: column;
@@ -770,7 +767,6 @@ img {
 	}
 	.contact .contactInfo .box .icon {
 		min-width: 35px;
-    	height: 35px;
+		height: 35px;
 	}
-	
 }

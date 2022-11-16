@@ -24,7 +24,6 @@ window.onscroll = () => {
 
 $(document).on('click', '.toogleBtn', function () {
 	if (!$(this).prev().hasClass('gitHubLink')) {
-
 		$(this).prev().addClass('gitHubLink');
 		$(this).prev().prev().addClass('webSiteLink');
 		$(this).addClass('activLink');
