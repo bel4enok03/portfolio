@@ -73,6 +73,8 @@ toogleBtn.forEach((btn, i) => {
 	});
 });
 
+
+
 // function buttonClick() {
 // 	toogleBtn.forEach((btn, i) => {
 // 		switch (menuItemActiv) {
