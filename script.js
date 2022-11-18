@@ -43,3 +43,37 @@ $('div.workOverlay').mouseleave(function () {
 });
 
 // section Work button toogle end
+
+//contact form start
+
+// let nameUser = document.querySelector('#name').value
+// let emailUser = document.querySelector('#email').value
+// let messageUser = document.querySelector('#message').value
+
+$('#sendEmail').click(function (e) {
+	e.preventDefault();
+	setTimeout(sendEmail(), 1000);
+});
+
+function sendEmail() {
+	fetch('http://www.portfolio-api.tatyana-chuvakova.ru/api/Email', {
+		method: 'POST',
+		headers: {
+			Accept: 'application/json',
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({
+			name: document.getElementById('name').value,
+			email: document.getElementById('email').value,
+			title: 'Новое сообщение',
+			message: document.getElementById('message').value,
+		}),
+	})
+		.then(function () {
+			alert('Сообщение отправлено');
+		})
+		.catch(function () {
+			alert('не удалось отправить сообщение');
+		});
+}
+//contact form end

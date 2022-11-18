@@ -238,19 +238,19 @@
 					<form>
 						<h2>Send message</h2>
 						<div class="inputBox">
-							<input type="text" name="name" required="required" />
+							<input type="text" id="name" name="name" required="required" />
 							<span>Full Name</span>
 						</div>
 						<div class="inputBox">
-							<input type="email" name="email" required="required" />
+							<input type="email" id="email" name="email" required="required" />
 							<span>Email</span>
 						</div>
 						<div class="inputBox">
-							<textarea required="required"></textarea>
+							<textarea type="text" required="required" id="message"></textarea>
 							<span>Type your Message...</span>
 						</div>
 						<div class="inputBox">
-							<input type="submit" name="" value="Send" />
+							<input id="sendEmail" type="submit" value="Send"/>
 						</div>
 					</form>
 				</div>
@@ -264,5 +264,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="script.js"></script>
+
 	</body>
 </html>

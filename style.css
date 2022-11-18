@@ -362,11 +362,11 @@ img {
 }
 
 .webSiteLink {
-	transform: translate(50px, -90px);
+	transform: translate(100%, -150%);
 }
 
 .gitHubLink {
-	transform: translate(100px, 0);
+	transform: translate(200%, 0);
 }
 
 .activLink {
@@ -654,13 +654,6 @@ img {
 		color: white;
 		font-size: 20px;
 	}
-	.up {
-		transform: translate(20px, -50px);
-	}
-
-	.down {
-		transform: translate(50px, 0);
-	}
 
 	.work .content .workBox:hover .workOverlay h2 {
 		font-size: 20px;
@@ -739,12 +732,7 @@ img {
 		color: white;
 		font-size: 15px;
 	}
-	.up {
-		transform: translate(20px, -20px);
-	}
-	.down {
-		transform: translate(30px, 10px);
-	}
+
 	.work .content .workBox:hover .workOverlay h2 {
 		font-size: 12px;
 	}
