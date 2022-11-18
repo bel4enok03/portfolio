@@ -427,6 +427,7 @@ img {
 /* contact start */
 .contact {
 	background-color: #111;
+	padding: 60px;
 }
 
 .contact .content {
@@ -480,14 +481,14 @@ img {
 	font-size: 24px;
 }
 
-.contact .contactForm .inputBox {
+.contact .contactForm .form .inputBox {
 	width: 100%;
 	margin-top: 10px;
 	position: relative;
 }
 
-.contact .contactForm .inputBox input,
-.contact .contactForm .inputBox textarea {
+.contact .contactForm .form .inputBox input,
+.contact .contactForm .form .inputBox textarea {
 	width: 100%;
 	padding: 5px 0;
 	margin: 10px 0;
@@ -501,7 +502,7 @@ img {
 	resize: none;
 }
 
-.contact .contactForm .inputBox span {
+.contact .contactForm .form .inputBox span {
 	color: #fff;
 	position: absolute;
 	left: 0;
@@ -512,16 +513,16 @@ img {
 	transition: 0.5s;
 }
 
-.contact .contactForm .inputBox input:focus ~ span,
-.contact .contactForm .inputBox input:valid ~ span,
-.contact .contactForm .inputBox textarea:valid ~ span,
-.contact .contactForm .inputBox textarea:focus ~ span {
+.contact .contactForm .form .inputBox input:focus ~ span,
+.contact .contactForm .form .inputBox input:valid ~ span,
+.contact .contactForm .form .inputBox textarea:valid ~ span,
+.contact .contactForm .form .inputBox textarea:focus ~ span {
 	color: #03e9f4;
 	font-size: 12px;
 	transform: translateY(-20px);
 }
 
-.contact .contactForm .inputBox input[type='submit'] {
+.contact .contactForm .form .inputBox input[type='submit'] {
 	width: 100%;
 	background: #111;
 	color: #03e9f4;
@@ -533,13 +534,29 @@ img {
 	transition: 0.2s;
 }
 
-.contact .contactForm .inputBox input[type='submit']:hover {
+.contact .contactForm .form .inputBox input[type='submit']:hover {
 	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
 	background: #03e9f4;
-	color: #050801;
+	color: #111;
 }
 
 /* contact end */
+
+/* footer start */
+footer {
+	margin-top: 20px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+footer span {
+	font-family: 'Dancing Script', cursive;
+	color: #111;
+	font-size: 25px;
+
+}
+/* footer end */
 
 /*Media*/
 

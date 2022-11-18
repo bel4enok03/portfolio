@@ -16,10 +16,14 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 	</head>
 	<body>
 		<!-- main start -->
-		<header class="he">
+		<header>
 			<a href="#" class="logo">Portfolio</a>
 			<div class="toggle"></div>
 			<ul class="menu">
@@ -235,22 +239,22 @@
 					</div>
 				</div>
 				<div class="contactForm">
-					<form>
+					<form class="form">
 						<h2>Send message</h2>
 						<div class="inputBox">
 							<input type="text" id="name" name="name" required="required" />
 							<span>Full Name</span>
 						</div>
 						<div class="inputBox">
-							<input type="email" id="email" name="email" required="required" />
+							<input type="text" id="email" name="email" required="required" />
 							<span>Email</span>
 						</div>
 						<div class="inputBox">
-							<textarea type="text" required="required" id="message"></textarea>
+							<textarea type="text" name="message" id="message" required="required"></textarea>
 							<span>Type your Message...</span>
 						</div>
 						<div class="inputBox">
-							<input id="sendEmail" type="submit" value="Send"/>
+							<input id="sendEmail" type="submit" value="Send" />
 						</div>
 					</form>
 				</div>
@@ -258,12 +262,17 @@
 		</section>
 
 		<!-- contact end -->
+		<!-- footer start -->
+		<footer>Created By <span>Tatyana Chuvakova</span> | &copy; 2022 All Right Reserved.</footer>
+		<!-- footer end -->
+
 		<script
 			src="https://code.jquery.com/jquery-3.6.0.min.js"
 			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			crossorigin="anonymous"
 		></script>
+		<script src="jquery.serializejson.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 		<script src="script.js"></script>
-
 	</body>
 </html>
