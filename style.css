@@ -41,6 +41,7 @@ section {
 .content {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 /* header start */
@@ -120,11 +121,8 @@ header ul li a:hover::before {
 /* main page start */
 
 .banner {
-	position: relative;
 	min-height: 100vh;
-	background: url(/img/mainFoto.jpg);
-	background-size: cover;
-	background-position: right;
+	background: #050801;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -146,6 +144,10 @@ header ul li a:hover::before {
 	font-size: 24px;
 	color: #fff;
 	line-height: 1.5em;
+}
+
+.mainFoto {
+	filter: grayscale(100%);
 }
 
 .btn {
@@ -258,19 +260,18 @@ header ul li a:hover::before {
 /* about start */
 .contentText {
 	padding-right: 30px;
+	max-width: 50%;
 }
 
 .contentText h3 {
 	font-size: 24px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .contentText p {
 	font-size: 16px;
-}
-
-.w-50 {
-	min-width: 50%;
+	text-align: justify;
 }
 
 img {
@@ -540,6 +541,35 @@ footer {
 	padding-bottom: 10px;
 	font-size: 18px;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.footerSocial {
+	display: flex;
+	margin-right: 40px;
+}
+
+.footerSocial a,
+.footerSocial a:visited,
+.footerSocial a:active {
+	text-decoration: none;
+	color: #050801;
+}
+
+.footerSocial .fa {
+	min-width: 30px;
+	height: 30px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 18px;
+}
+
+.footerSocial .fa:hover {
+	background: #03e9f4;
 }
 
 footer span {
@@ -599,10 +629,7 @@ footer span {
 		filter: invert(1);
 	}
 	section {
-		padding: 100px 50px;
-	}
-	.banner {
-		padding: 150px 40px 100px;
+		padding: 100px 30px;
 	}
 	.banner h2 {
 		font-size: 24px;
@@ -626,14 +653,8 @@ footer span {
 	.content {
 		flex-direction: column;
 	}
-	.w-50 {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 10px;
-		align-items: center;
-	}
-	.w-50 img {
-		max-width: 50%;
+	.contentText {
+		max-width: 100%;
 	}
 	.contentText h3 {
 		font-size: 20px;
@@ -708,9 +729,6 @@ footer span {
 }
 
 @media all and (max-width: 768px) {
-	.banner {
-		background: #050801;
-	}
 	.work .content .workBox {
 		width: 80%;
 		padding: 20px 20px;
@@ -756,13 +774,6 @@ footer span {
 	}
 }
 
-@media all and (max-width: 610px) {
-	.toogleMenuLink a {
-		top: 57%;
-	}
-}
-
-
 @media all and (max-width: 480px) {
 	section {
 		padding: 80px 10px;
@@ -777,34 +788,20 @@ footer span {
 	.services .content .servicesText h2 {
 		font-size: 14px;
 	}
-	.toogleMenuLink .toogleBtn {
-		background-color: #111;
-		height: 40px;
-		width: 40px;
-		font-size: 15px;
-		border: none;
-		left: 8%;
-		border-radius: 50%;
-		cursor: pointer;
-		transition: 0.3s;
+	.btn {
+		font-size: 10px;
 	}
-	.toogleMenuLink a {
-		background-color: black;
-		text-decoration: none;
-		height: 30px;
-		width: 30px;
-		color: #222;
-		left: 10%;
-		transition: 0.5s;
+	.mainFoto {
+		padding-left: 10px;
 	}
 	.work .content .workBox .workOverlay .fa {
 		color: white;
 		font-size: 15px;
 	}
-
-	.work .content .workBox:hover .workOverlay h2 {
-		font-size: 12px;
+	.toogleMenuLink .toogleBtn {
+		top: 53%;
 	}
+
 	.contact .content {
 		display: flex;
 		flex-direction: column;
@@ -825,5 +822,15 @@ footer span {
 	.contact .contactInfo .box .icon {
 		min-width: 35px;
 		height: 35px;
+	}
+	footer {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10px;
+	}
+
+	.footerSocial {
+		display: flex;
+		margin-right: 0px;
 	}
 }
