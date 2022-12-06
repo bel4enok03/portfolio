@@ -63,6 +63,8 @@ header.sticky {
 	background: #fff;
 	padding: 20px 100px;
 	box-shadow: 0 5px 20px rgba(3, 233, 244, 1);
+	-webkit-box-shadow: 0 5px 20px rgba(3, 233, 244, 1);
+	-moz-box-shadow: 0 5px 20px rgba(3, 233, 244, 1);
 }
 
 header .logo {
@@ -111,6 +113,8 @@ header ul li a:before {
 	transition: 0.2s ease;
 	background-color: #03e9f4;
 	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	-webkit-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	-moz-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
 }
 
 header ul li a:hover::before {
@@ -169,6 +173,8 @@ header ul li a:hover::before {
 	background: #03e9f4;
 	color: #050801;
 	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	-moz-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	-webkit-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
 }
 
 .btn span {
@@ -305,6 +311,8 @@ img {
 .services .content .servicesText:hover {
 	background: #03e9f4;
 	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	-moz-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	-webkit-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
 }
 
 .services .content .servicesText img {
@@ -354,6 +362,8 @@ img {
 .toogleMenuLink .toogleBtn:hover,
 .work .content .workBox .workOverlay .toogleMenuLink a:hover {
 	box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 0.83);
+	-moz-box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 0.83);
+	-webkit-box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 0.83);
 }
 
 .webSiteLink {
@@ -534,6 +544,8 @@ img {
 
 .contact .contactForm .form .inputBox input[type='submit']:hover {
 	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	-moz-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+	-webkit-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
 	background: #03e9f4;
 	color: #111;
 }
