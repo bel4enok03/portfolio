@@ -423,6 +423,7 @@ img {
 	background-color: #111;
 }
 
+
 .contact .content {
 	display: flex;
 	align-items: center;
@@ -458,6 +459,11 @@ img {
 	color: #fff;
 	margin-left: 20px;
 	font-size: 16px;
+}
+
+.contact .contactInfo .phone-text {
+	text-decoration: none;
+	color: #fff;
 }
 
 .contact .contactInfo .box .text h3 {
