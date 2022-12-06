@@ -461,13 +461,12 @@ img {
 	font-size: 16px;
 }
 
-.contact .contactInfo .phone-text {
-	text-decoration: none;
-	color: #fff;
-}
-
 .contact .contactInfo .box .text h3 {
 	color: #03e9f4;
+}
+
+.contact .contactInfo .box .text p {
+	color: #fff;
 }
 
 .contact .contactForm {
