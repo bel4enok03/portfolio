@@ -151,6 +151,7 @@ header ul li a:hover::before {
 }
 
 .mainFoto {
+	pointer-events: none;
 	filter: grayscale(100%);
 }
 
@@ -280,7 +281,9 @@ header ul li a:hover::before {
 	text-align: justify;
 }
 
+
 img {
+	pointer-events: none;
 	max-width: 100%;
 }
 
