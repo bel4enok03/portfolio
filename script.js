@@ -91,7 +91,7 @@ $('#sendEmail').click(function (e) {
 });
 
 function sendEmail(emailMessage) {
-	fetch('http://www.portfolio-api.tatyana-chuvakova.ru/api/Email', {
+	fetch('https://www.portfolio-api.tatyana-chuvakova.ru/api/Email', {
 		method: 'POST',
 		headers: {
 			Accept: 'application/json',
